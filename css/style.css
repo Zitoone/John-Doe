@@ -30,14 +30,28 @@ ul{
     border: 1px solid orange;
     background: orange;
     cursor: pointer;
+        &:hover{
+            /* position: relative; */
+            background-color: var(--pink)!important;
+            border: 1px solid var(--pink)!important;
+            color: white!important;
+        }
     }
 a:hover{
-    color: var(--pink);
+    color: var(--pink)!important;
+    cursor: pointer;
 }
-h1{
+h1,
+h2{
     font-family: var(--titles);
     font-size: 36px;
     font-weight: 700;
+    justify-self: center;
+}
+h3{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: var(--titles);
 }
 header,
 main{
@@ -163,12 +177,127 @@ Section 1 presentation */
 /* Section 2 Formation */
 #formation{
     max-width: 1140px;
-    background: url(../img/dev-a-la-carte.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-top: 100px;
-    background-position-x: 101%;
+    margin: auto;
+        img{
+            width: 800px;
+        }
+        h2,
+        h3{
+            color: white;
+            padding-bottom: 25px;
+        }
+        #alacarte{
+            display: flex;
+            align-items: center;    
+                article{
+            position: relative;
+            left: -10%;
+            background-color: var(--orange);
+            padding: 10px 30px;
+                p{
+                    padding: 10px 0 10px 0;
+                    font-size: 16px;
+                }
+                .btn{
+                    padding: 10px;
+                    width: 40%;
+                    text-align: center;
+                    background-color: var(--darkblue);
+                    border: 1px solid white;
+                    justify-self: center;
+                    position: relative;
+                    top: 30px;
+                }
+        }}
+        #dwwm{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            article{
+                position: relative;
+                top: 20px;
+                right: -50px;
+                max-width: 360px;
+                background-color: var(--orange);
+                padding: 30px;
+                max-height: 535px;
+            }
+                p{
+                    padding: 10px 0 10px 0;
+                    font-size: 16px;
+                }
+                .btn{
+                    padding: 10px;
+                    width: 40%;
+                    text-align: center;
+                    background-color: var(--darkblue);
+                    border: 1px solid white;
+                    justify-self: center;
+                    position: relative;
+                    top: 10px;
+                }
+        }
+        
+}
+/* Section 3 Compétences */
+#competences{
+    h2{
+        color: white;
+        padding: 80px 0 30px 0;
+    }
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            details{
+                border: 1px solid white;
+                background-color: white;
+                margin: 25px;
+                padding-bottom: 10px;
+                summary::marker{
+                font-size: 1px;
+                }
+    
+            a{
+                color: var(--orange);
+                border-bottom: 1px solid var(--pink);
+                font-size: 18px;
+                margin: 10px;
+                
+            }
+            li{
+                color: black;
+                list-style: circle;
+                padding: 5px;
+            }
+        }}
+}
+/* Section 4 Projets */
+#projets{
+    h2{
+        color: white;
+    }
+   img{
+    width: 30%;
+   }
+   .btn{
+    padding: 10px;
+    text-align: center;
+    width: 15%;
+    background-color: var(--darkblue);
+    border: 1px solid white;
+    }
+    div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 50px 0 50px; 
 
+    }
+    /* div:nth-child(2){
+
+    } */
 }
   
 

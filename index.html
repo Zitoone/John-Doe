@@ -28,15 +28,15 @@
                             <form action="#">
                                 <div>
                                     <label for="name">Votre nom</label>
-                                    <input type="text" name="name" placeholder="Votre nom" id="">
+                                    <input type="text" id="name" placeholder="Votre nom">
                                 </div>
                                 <div>
                                     <label for="email">Votre email</label>
-                                    <input type="email" name="email" placeholder="Votre email" id="">
+                                    <input type="email" id="email" placeholder="Votre email">
                                 </div>
                                 <div>
                                     <label for="message">Votre message</label>
-                                    <textarea name="message" placeholder="votre message" id=""></textarea>
+                                    <textarea id="message" placeholder="votre message"></textarea>
                                 </div>
                                 <input class="btn" type="button" value="Envoyer la demande">
                             </form>
@@ -47,6 +47,7 @@
                 
             </ul>
         </nav>
+        <i id="burgermenu" class="fa-solid fa-bars"></i>
     </header>
 
     <main>
@@ -103,7 +104,7 @@
             <article>
             <div>
                 <details>
-                    <summary><p><a>Langages de programmation</a></p></summary>
+                    <summary>Langages de programmation</summary>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -114,40 +115,43 @@
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Frameworks et bibliothèques</a></p></summary>
+                    <summary>Frameworks et bibliothèques</summary>
                     <ul>
-                        <li>Front-end</li>
+                        <li>Front-end
                             <ul>
                                 <li>React JS</li>
                                 <li>Angular</li>
                                 <li>Boostrap</li>                       
                             </ul>
-                        <li>Back-end</li>
+                        </li>
+                        <li>Back-end
                             <ul>
                                 <li>Node JS</li>
                                 <li>Express JS</li>
                             </ul>
+                        </li>
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Bases de données</a></p></summary>
+                    <summary>Bases de données</summary>
                     <ul>
                         <li>MySQL</li>
                         <li>MogoDB</li>
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Outils de développement</a></p></summary>
+                    <summary>Outils de développement</summary>
                     <ul>
                         <li>Truc</li>
                         <li>Muche</li>
                         <li>Chouette</li>
                     </ul>
-            </div>            
-            <div>        
                 </details>
+            </div>
+
+            <div>                       
                 <details>
-                    <summary><p><a>Conception Web</a></p></summary>
+                    <summary>Conception Web</summary>
                     <ul>
                         <li>Responsive Web Design</li>
                         <li>Connaissances des principes UX/UI</li>
@@ -155,7 +159,7 @@
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Sécurité</a></p></summary>
+                    <summary>Sécurité</summary>
                     <ul>
                         <li>Principe de sécurité Web</li>
                         <li>Gestion des sessions et des cookies</li>
@@ -163,7 +167,7 @@
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Autres compétences</a></p></summary>
+                    <summary>Autres compétences</summary>
                     <ul>
                         <li>Beau gosse</li>
                         <li>Sérieux</li>
@@ -171,7 +175,7 @@
                     </ul>
                 </details>
                 <details>
-                    <summary><p><a>Service Web</a></p></summary>
+                    <summary>Service Web</summary>
                     <ul>
                         <li>Tsoin</li>
                         <li>Bidul</li>
@@ -186,16 +190,34 @@
         </section>
 
         <section id="projets">
-            <div>
+            <div id="projets-title">
                 <h2>Mes projets</h2>
                 <a href="#" class="btn">Voir tous les projets</a>
             </div>
 
-            <div>
+            <div id="projets-articles">
                 <article>
                     <div>
-                        <img src="img/projet1.PNG" alt="Projet Home Key">
+                        <img src="img/projet1.PNG" alt="Projet Vividly">
                         <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cumque? Rem asperiores ad dolores impedit vero officiis dignissimos ullam ratione ducimus quasi, repellat provident quaerat magni a dolorum aperiam laudantium.</p>
+                    </div>
+                    <a href="#" class="btn">Lire la suite</a>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="img/projet2.PNG" alt="Projet Home Key">
+                        <h3>Vividly - Intégration Mobile First</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cumque? Rem asperiores ad dolores impedit vero officiis dignissimos ullam ratione ducimus quasi, repellat provident quaerat magni a dolorum aperiam laudantium.</p>
+                    </div>
+                    <a href="#" class="btn">Lire la suite</a>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="img/projet3.PNG" alt="Projet Portfolio">
+                        <h3>Portfolio de Développeur Web</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cumque? Rem asperiores ad dolores impedit vero officiis dignissimos ullam ratione ducimus quasi, repellat provident quaerat magni a dolorum aperiam laudantium.</p>
                     </div>
                     <a href="#" class="btn">Lire la suite</a>

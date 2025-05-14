@@ -98,7 +98,7 @@ header{
         display: none;
     }
 }
-/* Modales */
+/* Modales HTML*/
 .modal {
     visibility: hidden;
     opacity: 0;
@@ -149,6 +149,37 @@ header{
     color: var(--orange)!important;
     text-decoration: none;
   }
+
+/* Modal JS */
+dialog{
+    place-self: center;
+    form input,
+    form, textarea{
+        width: 95%;
+        margin: auto;
+        font-family: "Open Sans", sans-serif;
+    }
+    div{
+        padding: 10px;
+    }
+    input.btn{
+        width: 90%;
+        background-color: var(--darkblue);
+        border: solid 1px var(--darkblue);
+        color: white;
+        padding: 10px;
+    }
+    h1{
+        color: var(--darkblue);
+    }    
+}
+#closeBtn{
+    font-size: 30px;
+    position: relative;
+    left: 300px;
+    top: -20px;
+}
+
 /* Main
 Section 1 presentation */
 #presentation{
@@ -303,7 +334,7 @@ Section 1 presentation */
     #projets .projets-articles,
     #projets-realises .projets-articles{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 50px;
         article{
             display: flex;
@@ -357,8 +388,7 @@ footer{
 }
 /* Responsive Tablette accueil */
 @media screen and (max-width:1024px) {
-    header nav ul li,
-    header nav ul li.btn{
+    header nav{
         display: none;
     }
     header{
@@ -367,6 +397,34 @@ footer{
             cursor: pointer;
             padding: 10px;
             color: white;
+        }
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        background-color: white;
+        
+        ul{
+            color:var(--darkblue);
+            display: block;
+            flex-direction: column;
+  
+        }
+        li{
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            justify-self: center;
+        }
+        a{
+            
+            text-decoration: none;
+            color:var(--darkblue);
+            margin: 20px 0 20px 0;
         }
     }
     #presentation{

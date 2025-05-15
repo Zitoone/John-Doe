@@ -20,12 +20,19 @@ window.addEventListener('resize', () => {
 
 // Modale contact
 const dialog = document.querySelector("dialog");
-const openModal = document.querySelector("#modal")
-const closeModal = document.querySelector("#closeBtn")
+const openModal = document.querySelector(".modale")
+const openModal2 = document.querySelector(".mod")
+const closeModal = document.querySelector(".closeBtn")
 openModal.addEventListener("click", () => {
     dialog.showModal()
 })
 closeModal.addEventListener("click", () => {
-    console.log("close")
     dialog.close();
-  });
+});
+
+  openModal2.addEventListener("click", () => {
+    dialog.showModal()
+});
+window.addEventListener('resize',() => {
+    dialog.close();
+});
